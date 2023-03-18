@@ -1,11 +1,10 @@
 ---
-title: "Website 1"
+title: "Banu's WebSites"
 author: "Banu"
 date: "2023-03-17"
 output: html_document
 ---
 
-# Simple First Website
-## Note the six lines of YMAL tags 
-### We will knit this Rmarkdown to an html file
-Then push index.html to githut io repo
+# Welcome to Banu's WebSites
+## I am a student at SMU persuing Masters in Data Science  
+### Check out the remaining tabs for my work as part of MSDS at SMU
