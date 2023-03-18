@@ -1,0 +1,11 @@
+---
+title: "Website 1"
+author: "Banu"
+date: "2023-03-17"
+output: html_document
+---
+
+# Simple First Website
+## Note the six lines of YMAL tags 
+### We will knit this Rmarkdown to an html file
+Then push index.html to githut io repo

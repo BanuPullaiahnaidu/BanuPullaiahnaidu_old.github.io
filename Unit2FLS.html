@@ -11,9 +11,9 @@
 
 <meta name="author" content="Banu" />
 
-<meta name="date" content="2023-03-17" />
+<meta name="date" content="2023-01-08" />
 
-<title>Website 1</title>
+<title>Unit 1 FLS</title>
 
 <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -262,24 +262,77 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Website 1</h1>
+<h1 class="title toc-ignore">Unit 1 FLS</h1>
 <h4 class="author">Banu</h4>
-<h4 class="date">2023-03-17</h4>
+<h4 class="date">2023-01-08</h4>
 
 </div>
 
 
-<div id="simple-first-website" class="section level1">
-<h1>Simple First Website</h1>
-<div id="note-the-six-lines-of-ymal-tags" class="section level2">
-<h2>Note the six lines of YMAL tags</h2>
-<div id="we-will-knit-this-rmarkdown-to-an-html-file"
-class="section level3">
-<h3>We will knit this Rmarkdown to an html file</h3>
-<p>Then push index.html to githut io repo</p>
-</div>
-</div>
-</div>
+<pre class="r"><code>population = rnorm(10000000,0,1)
+hist(population)</code></pre>
+<p><img src="Unit2FLS_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>population = rchisq(10000000,2)
+hist(population)</code></pre>
+<p><img src="Unit2FLS_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<pre class="r"><code>summary(population)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##  0.0000  0.5756  1.3866  2.0009  2.7734 38.9050</code></pre>
+<pre class="r"><code>sd(population)</code></pre>
+<pre><code>## [1] 2.001425</code></pre>
+<pre class="r"><code>sample1 = sample(population,50)
+hist(sample1)</code></pre>
+<p><img src="Unit2FLS_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
+<pre class="r"><code>summary(sample1)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+## 0.01044 0.49318 0.91308 1.66878 2.07415 8.21077</code></pre>
+<pre class="r"><code>sd(sample1)</code></pre>
+<pre><code>## [1] 1.975963</code></pre>
+<pre class="r"><code>mean(sample1)</code></pre>
+<pre><code>## [1] 1.668778</code></pre>
+<pre class="r"><code>n1=50
+simulations=10000
+xbar_holder1=numeric(simulations)
+for (i in 1:simulations)
+{ 
+sample1 = sample(population,n1)
+xbar1 = mean(sample1)
+xbar_holder1[i] = xbar1
+}
+
+hist(xbar_holder1, col = &quot;blue&quot;, main = paste(&quot;Distribution of the sample mean: n = &quot;, n1), xlab = &quot;Dist 1 Sample Means&quot;, xlim = c(-4,4))</code></pre>
+<p><img src="Unit2FLS_files/figure-html/unnamed-chunk-1-4.png" width="672" /></p>
+<pre class="r"><code>summary(xbar_holder1)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   1.060   1.804   1.987   2.004   2.186   3.234</code></pre>
+<pre class="r"><code>sd(xbar_holder1)</code></pre>
+<pre><code>## [1] 0.2829955</code></pre>
+<pre class="r"><code>hist(xbar_holder1, col = &quot;blue&quot;, main = paste(&quot;Distribution of the sample mean: n = &quot;, n1), xlab = &quot;Dist 1 Sample Means&quot;)</code></pre>
+<p><img src="Unit2FLS_files/figure-html/unnamed-chunk-1-5.png" width="672" /></p>
+<pre class="r"><code>Beach_Comber_age = c(25,19,37,29,40,28,31)
+summary(Beach_Comber_age)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   19.00   26.50   29.00   29.86   34.00   40.00</code></pre>
+<pre class="r"><code>sd(Beach_Comber_age)</code></pre>
+<pre><code>## [1] 7.081162</code></pre>
+<pre class="r"><code>t.test(Beach_Comber_age, mu = 21)</code></pre>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  Beach_Comber_age
+## t = 3.3093, df = 6, p-value = 0.01622
+## alternative hypothesis: true mean is not equal to 21
+## 95 percent confidence interval:
+##  23.30816 36.40613
+## sample estimates:
+## mean of x 
+##  29.85714</code></pre>
+<pre class="r"><code>hist(Beach_Comber_age)</code></pre>
+<p><img src="Unit2FLS_files/figure-html/unnamed-chunk-1-6.png" width="672" /></p>
+<pre class="r"><code>(mean(Beach_Comber_age) - 21)/(sd(Beach_Comber_age)/sqrt(6))</code></pre>
+<pre><code>## [1] 3.063831</code></pre>
+<pre class="r"><code>(mean(Beach_Comber_age) - 21)/(sd(Beach_Comber_age)/sqrt(7))</code></pre>
+<pre><code>## [1] 3.309315</code></pre>
 
 
 
