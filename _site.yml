@@ -1,8 +1,0 @@
-name: "banu_websites"
-navbar:
-  title: "Banu WebSites"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "Unit1FLS"
-      href: Unit2FLS.html
