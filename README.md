@@ -1,2 +1,2 @@
 # BanuPullaiahnaidu.github.io
-Website to Deply Banu's Work
+Website to Deploy Banu's Work
