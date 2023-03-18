@@ -1,0 +1,10 @@
+---
+title: "Banu's Websites"
+author: "Banu"
+date: "2023-03-18"
+output: html_document
+---
+
+# Banu's Websites
+## I am a student at SMU persuing Masters in Data Science
+### Please check out the different tabs for my projects
