@@ -1,10 +1,21 @@
 ---
-title: "Banu's Websites"
-author: "Banu"
-date: "2023-03-18"
-output: html_document
+#title: "Banu's Projects"
+#author: "Banu"
+#date: "2023-03-18"
+#output: html_document
 ---
 
-# Banu's Websites
-## I am a student at SMU persuing Masters in Data Science
-### Please check out the different tabs for my projects
+# Hello and Welcome to Banu's Projects
+#
+# 
+### I am a student at SMU persuing Masters in Data Science
+### Here I will be  showcasing my projects
+#
+#
+#
+#
+#
+#
+#
+#
+### Please check out the different tabs to learn more about my projects
