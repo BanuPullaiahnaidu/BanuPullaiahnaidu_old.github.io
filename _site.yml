@@ -4,8 +4,8 @@ navbar:
   left:
     - text: "About Me"
       href: index.html
-    - text : "Cast Study 1"
+    - text : "Case Study 1"
       href : Unit8FLS.html
-    - text : "Cast Study 1 Shinny App"
+    - text : "Case Study 1 Shinny App"
       href : "https://banu.shinyapps.io/CaseStudy01/"
       
